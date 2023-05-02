@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #1d3557;
+}
+section .container {
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 30px 50px;
+}
+section .container .container__information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.container__information-items {
+  width: 20%;
+}
+
+/*banner*/
+#banner {
+  position: relative;
+}
+
+.img-benner {
+  position: relative;
+  background-image: url("../img/banner.jpg");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  filter: brightness(50%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+.text-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.text-banner h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.text-banner span {
+  color: #f7f7f7;
+}
+
+/*Navbar*/
+#nav-bar a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  border-left: 2px solid #dfede9;
+  padding: 0 12px;
+}
+#nav-bar a:hover,
+a:active {
+  font-weight: bold;
+  cursor: grab;
+}
+.text-nav {
+  display: inline-block;
+}
+.text-nav h1 {
+  font-weight: bold;
+}
+.text-nav span {
+  color: #bdc3c7;
+}
+.Icon {
+  color: blue;
+  font-weight: bolder;
+}
+#nav-bar {
+  text-align: center;
+}
+
+/*Xây dựng Thông tin cá nhân*/
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+li span {
+  font-weight: bold;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-weight: 32px;
+}
+#personal-info {
+  background-color: rgb(248, 248, 248);
+}
+#target {
+  background-color: rgb(240, 240, 240);
+}
+
+/*Ẩn thông tin user*/
+.view-more {
+  display: none;
+}
+.less-more {
+  display: none;
+}
+.containerr {
+  display: none;
+}
+
+#button {
+  background-color: rgba(0, 42, 255, 0.71);
+  color: white;
+  border-radius: 10px;
+}
+
+/*Xây dựng phần Thông tin nghề nghiệp*/
+.job-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap: 20px;
+}
+.job-box-grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  column-gap: 20px;
+  row-gap: 60px;
+  border: 1px solid #bdc3c7;
+  align-items: center;
+  padding: 24px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.job-content {
+  grid-column: 1/3;
+  display: none;
+}
+.list1 {
+  position: relative;
+}
+.list2 {
+  position: relative;
+}
+.job-node::before {
+  content: "•";
+  color: cyan;
+  font-weight: bolder;
+  display: inline-block;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: -15px;
+}
+
+/* Xây dựng phần Sở thích*/
+.iconn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid aqua;
+  padding: 5px;
+  margin-left: 0.5rem;
+  margin-right: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/*Xây dựng phần "Ngôn Ngữ", "Kỹ Năng"*/
+.good {
+  background-color: rgb(0, 174, 255);
+  display: inline-block;
+  height: 3px;
+  width: 50px;
+}
+.bad {
+  background-color: darkgray;
+  display: inline-block;
+  height: 3px;
+  width: 50px;
+}
+.ver {
+  background-color: rgb(0, 174, 255);
+  display: inline-block;
+  height: 3px;
+  width: 50px;
+}
+
+/*Xây dựng phần Chứng chỉ - Giải thưởng*/
+.cer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  row-gap: 30px;
+}
+.img-cc {
+  width: 240px;
+  margin-right: 10px;
+}
+.cer-content {
+  display: flex;
+}
+.border-a {
+  padding-left: 20px;
+  border-left: 1px solid #d6c08d;
+}
+.border-b {
+  padding-top: 20px;
+  border-top: 1px solid #d6c08d;
+  grid-column: 1/-1;
+}
+
+/*Xây dựng phần Dự án*/
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+}
+.project-1 {
+  display: flex;
+  flex-direction: column;
+}
+.cv-cn {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px;
+  border-left: 1px solid rgb(233, 233, 233);
+  border-right: 1px solid rgb(233, 233, 233);
+}
+.cv-cnc {
+  border: 1px solid rgb(233, 233, 233);
+}
+.now {
+  background-color: rgba(0, 85, 255, 0.417);
+  padding: 4px 8px;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+table {
+  border-collapse: collapse;
+}
+td {
+  padding: 1px;
+}
+tr {
+  border: 1px solid rgb(233, 233, 233);
+}
+tr td:first-child {
+  width: 90px;
+  vertical-align: top;
+}
+
+/* Xây dựng phần Liên hệ*/
+#footer {
+  text-align: center;
+}
+#footer a:link,
+a:visited {
+  text-decoration: none;
+}
+#aaa {
+  border-radius: 50%;
+  border: 1px solid blue;
+  padding: 2px;
+  background-color: dodgerblue;
+  color: white;
+}
+
+/*(Nâng cao) Bổ sung ảnh cá nhân
+.avt-default {
+  height: 320px;
+  width: 300px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: rgb(246, 246, 246);
+}
+.avt {
+  position: absolute;
+  display: inline-block;
+  bottom: 25px;
+  right: 50%;
+  transform: translate(50%, 65%);
+}
+*/

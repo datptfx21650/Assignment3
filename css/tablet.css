@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+  .text-nav {
+    display: none;
+  }
+  #nav-bar a:link,
+  a:visited {
+    padding-bottom: 20px;
+  }
+  .nav-bar {
+    margin-top: 1rem;
+  }
+  .container__information-items {
+    width: 100%;
+  }
+  .img-benner {
+    background-position: center;
+  }
+  .cer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
